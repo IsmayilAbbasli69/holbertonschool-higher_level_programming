@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""Define a function that squares all elements of a matrix."""
+
+
 def square_matrix_simple(matrix=[]):
+    """Return a new matrix with all values squared."""
     new_matrix = []
     for row in matrix:
         squared_row = []
