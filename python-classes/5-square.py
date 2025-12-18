@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a Square class with size validation, area calculation, and printing."""
+"""Defines a Square class with size validation and printing."""
 
 
 class Square:
@@ -7,7 +7,7 @@ class Square:
 
     def __init__(self, size=0):
         """Initialize a square with an optional size."""
-        self.size = size
+        self.size = size  # Uses setter for validation
 
     @property
     def size(self):
