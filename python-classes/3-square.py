@@ -17,4 +17,7 @@ class Square:
         self.__size = size
 
     def area(self):
+        """ This is a comment """
+
+        
         return self.__size **2
