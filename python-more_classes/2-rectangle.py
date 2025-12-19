@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""This is module."""
+"""This module defines a Rectangle class with width and height."""
 
 
 class Rectangle:
-    """Rectangle class defines a rectangle blah blah"""
+    """Rectangle class defines a rectangle by width and height."""
 
     def __init__(self, width=0, height=0):
         """Initialize a rectangle with optional width and height."""
@@ -12,7 +12,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """coding something"""
+        """Retrieve the width."""
         return self.__width
 
     @width.setter
@@ -38,15 +38,12 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-
     def area(self):
-
+        """Return the area of the rectangle."""
         return self.__width * self.__height
-    
-    
-    def perimeter(self):
 
+    def perimeter(self):
+        """Return the perimeter of the rectangle."""
         if self.__height == 0 or self.__width == 0:
             return 0
-        return 2*(self.__width + self.__height)
-    
+        return 2 * (self.__width + self.__height)
