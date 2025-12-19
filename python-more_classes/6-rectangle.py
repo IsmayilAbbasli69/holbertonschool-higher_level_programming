@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Module defines a Rectangle class."""
 
+
 class Rectangle:
     """Rectangle class with width, height, and instance tracking."""
-    
+
     number_of_instances = 0  # Public class attribute
 
     def __init__(self, width=0, height=0):
