@@ -1,6 +1,14 @@
 #!/usr/bin/python3
-#it is comment
+
+"""
+Boring comment
+"""
 
 
 def lookup(obj):
+    """"
+
+    Comment
+
+    """
     return dir(obj)
