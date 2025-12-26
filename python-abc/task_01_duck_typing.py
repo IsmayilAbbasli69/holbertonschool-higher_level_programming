@@ -33,9 +33,8 @@ class Rectangle(Shape):
         return self.width * self.height
 
     def perimeter(self):
-        return 2 * (self.width + self.height)
+        return max(0, 2 * (self.width + self.height))
 
 def shape_info(shape):
-    # We don’t check type; we just call the methods
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
