@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+"""Functio"""
+
+
+def append_write(filename="", text=""):
+    """Appends."""
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)
