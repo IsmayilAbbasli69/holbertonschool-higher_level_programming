@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def raise_exception_msg(message=""):
-    raise ZeroDivisionError(message)
+def raise_exception():
+    raise TypeError
