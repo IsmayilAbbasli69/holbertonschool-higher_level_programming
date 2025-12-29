@@ -5,7 +5,7 @@ Docstring for python-input_output.0-read_file
 """
 
 
-def read_file(filename="", text=""):
+def write_file(filename="", text=""):
     """
     FILE
     """
