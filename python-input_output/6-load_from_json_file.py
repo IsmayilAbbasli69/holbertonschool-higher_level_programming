@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 """
-Docstring for python-input_output.6-load_from_json_file
+Module
 """
+import json
 
-import json 
 
 def load_from_json_file(filename):
-
     """
-    Docstring for load_from_json_file
-
-    :param filename: Description
+THis gotta work
     """
-    with open(filename, "r") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
