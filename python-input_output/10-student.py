@@ -21,10 +21,10 @@ class Student:
         """
         Docstring for to_json
         """
-        if not isinstance(attrs, list):
-            return self.__dict__
-        
-        result={}
-        for key in self.__dict__:
-            result[key] = self.__dict__[key]
-        return result
+        if isinstance(attrs, list) and all(isinstance(a, str) for a in attrs):
+            res = {}
+            for a in attrs:
+                if a in self.__dict__:
+                    res[a] = self.__dict__[a]
+            return res
+        return self.__dict__
