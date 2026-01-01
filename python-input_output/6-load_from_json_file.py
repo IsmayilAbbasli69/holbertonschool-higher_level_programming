@@ -8,8 +8,8 @@ import json
 def load_from_json_file(filename):
     """
     Docstring for load_from_json_file
-    
+
     :param filename: Description
     """
     with open(filename, "r") as f:
-        json.load(filename, f)
+        return json.load(f)
