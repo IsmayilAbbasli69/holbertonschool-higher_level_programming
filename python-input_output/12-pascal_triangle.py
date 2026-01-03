@@ -3,6 +3,13 @@
 
 
 def pascal_triangle(n):
+    """
+    Docstring for pascal_triangle
+    
+    :param n: Description
+    """
+
+
     if n <= 0:
         return []
 
