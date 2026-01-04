@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import json
+
+
+def serialize_and_save_to_file(data, filename):
+    """
+    Serialize a Python dictionary to JSON and save it to a file.
+
+    :param data: Python dictionary to serialize
+    :param filename: Output JSON filename
+    """
+    with open(filename, 'w', encoding='utf-8') as file:
+        json.dump(data, file)
+
+
+def load_and_deserialize(filename):
+    """
+    Load JSON data from a file and deserialize it into a Python dictionary.
+
+    :param filename: Input JSON filename
+    :return: Python dictionary with deserialized data
+    """
+    with open(filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
