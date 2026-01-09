@@ -35,7 +35,7 @@ class APIBuilder(BaseHTTPRequestHandler):
              self.wfile.write(json_data.encode())
             
         else:
-            self.send_response(400)
+            self.send_response(404)
             self.send_header("Content-type","text/plain")
             self.end_headers()
             self.wfile.write(b"Endpoint not found")
