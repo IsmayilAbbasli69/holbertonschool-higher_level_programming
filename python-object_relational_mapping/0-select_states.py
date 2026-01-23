@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""Start the project"""
-
-
+"""
+Start the project
+"""
 import MySQLdb
 import sys
 
 
 if __name__ == "__main__":
-    user_name=sys.argv[1]
-    password = sys.argv[2]
-    db_name=sys.argv[3]
 
-    db=MySQLdb.connect(
+    user_name = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
+
+
+    db = MySQLdb.connect(
         host="localhost",
         port=3306,
         user=user_name,
@@ -19,10 +21,15 @@ if __name__ == "__main__":
         db=db_name
     )
 
-    cursor=db.cursor()
+
+    cursor = db.cursor()
+
 
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    rows=cursor.fetchall()
+
+
+    rows = cursor.fetchall()
+
 
     for row in rows:
         print(row)
