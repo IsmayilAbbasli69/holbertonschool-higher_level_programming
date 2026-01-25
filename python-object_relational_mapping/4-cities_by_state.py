@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""sss"""
+"""smt"""
 import MySQLdb
 import sys
 
