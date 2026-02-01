@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""ss"""
+"""a command """
 import MySQLdb
 import sys
 

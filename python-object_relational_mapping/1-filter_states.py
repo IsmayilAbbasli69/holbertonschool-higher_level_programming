@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""ngl"""
+"""type"""
 import MySQLdb
 import sys
 
